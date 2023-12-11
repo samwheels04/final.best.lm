@@ -1,0 +1,28 @@
+url: ~
+template:
+  bootstrap: 5
+  theme: arrow-dark
+  bootswatch: quartz
+  bslib:
+    pkgdown-nav-height: 82px
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto Slab"}
+navbar:
+  bg: primary
+authors:
+  footer:
+    roles: [cre, fnd]
+    text: "Crafted by Yours Truly, "
+  sidebar:
+    roles: [aut, ctb]
+    before: "So *who* does the work?"
+    after: "Thank you!"
+  before: "This package is proudly brought to you by:"
+  after: |
+   Love all the fans out there! You guys make our day. :heart: :smile:
+   Shoutout to R master [Professor Kabacoff](https://github.com/Rkabacoff)
+   for teaching us all of this stuff. He's great.
+
+
+
+

@@ -1,0 +1,32 @@
+---
+title: "Introduction to best.linmod"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to best.linmod}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The `final.best.lm` package contains a function that finds the best linear model
+for an inputted dependent variable based on a specified number of variables. It
+returns a summary of the dependent variable, best predictor variables, and the 
+variation in the dependent variable that is covered by the predictor variables.
+
+```{r setup}
+library(final.best.lm)
+```
+
+
+```{r example}
+library(final.best.lm)
+best.linmod(mtcars, "mpg")
+best.linmod(mtcars, "mpg", 5, 0.7)
+```
+

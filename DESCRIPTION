@@ -1,0 +1,26 @@
+Package: final.best.lm
+Type: Package
+Title: Best Linear Model 
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Sam",
+           family = "Wheeler",
+           role = c("aut", "cre"),
+           email = "swheeler02@wesleyan.edu"),
+    person("Dylan", "Clack", role = "aut")
+    )
+Description:
+    best.lm is a function to create the best possible linear model with a
+    specified number of predictor variables. It splits the data into a training
+    and test set, and the sizes of the sets can be changed in the "train_size"
+    parameter. Then it iterates through every possible linear model and finds the
+    best one based on the adjusted R squared and mean squared error.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
